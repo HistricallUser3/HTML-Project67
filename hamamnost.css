@@ -188,16 +188,53 @@ nav {
   padding: 28px;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.pkg:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
 }
 
 .pkg.hot {
   background: #c9963a;
-  color: #1a1208;
+  color: #ffffff;
+}
+
+.pkg.hot:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(201, 150, 58, 0.4);
 }
 
 .pkg-price {
   font-size: 38px;
   font-weight: 800;
+}
+
+.pkg-btn {
+  width: 100%;
+  padding: 14px;
+  background: #c9963a;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.pkg-btn2 {
+  width: 100%;
+  padding: 14px;
+  background: #3a3938;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.pkg-btn:hover,
+.pkg-btn2:hover {
+  transform: scale(1.05);
 }
 
 .pkg-features {
@@ -260,6 +297,29 @@ footer {
   text-align: center;
   color: rgba(255,255,255,0.4);
 }
+
+.svc-row {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.svc-row:hover {
+  background: rgba(201, 150, 58, 0.1);
+  padding-left: 15px;
+  transform: scale(1.02);
+  border-radius: 10px;
+}
+
+.nav-cta {
+  transition: all 0.3s ease;
+}
+
+.nav-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(201,150,58,0.4);
+}
+
+
 
 @media (max-width: 768px) {
 
